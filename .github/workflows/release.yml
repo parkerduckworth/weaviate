@@ -20,6 +20,6 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         goversion: "1.19"
-        project_path: "./cmd/weaviate-server/main.go"
+        project_path: "./cmd/weaviate-server"
         extra_files: LICENSE README.md
         ldflags: -w -extldflags "-static" -X github.com/weaviate/weaviate/usecases/config.GitHash='"$GITHASH"'
