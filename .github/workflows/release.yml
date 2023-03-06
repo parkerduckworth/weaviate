@@ -14,7 +14,7 @@ jobs:
   releases-matrix:
     name: Release precompiled binaries
     runs-on: ubuntu-latest
-    if: github.event.release.owner == 'parkerduckworth' && github.event.release.repo == 'weaviate'
+    if: github.event.release.repo == 'parkerduckworth/weaviate'
     strategy:
       matrix:
         goos: [linux]
